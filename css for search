@@ -1,0 +1,43 @@
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* center the search bar on the screen */
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* wrapper around the input + icon */
+.input-wrapper {
+  position: relative;  /* makes the icon position relative to this box */
+  width: 300px;        /* width of search input */
+}
+
+/* the input itself */
+.input-wrapper input {
+  width: 100%;
+  padding: 10px 40px 10px 12px; /* leave space on right for icon */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* the magnifying glass icon */
+.magnifying-glass {
+  position: absolute;
+  right: 12px;                 /* distance from right edge */
+  top: 50%;
+  transform: translateY(-50%); /* vertical centering */
+  width: 20px;
+  height: 20px;
+  fill: #666;
+  pointer-events: none;        /* so it doesn’t block typing/clicking */
+}
